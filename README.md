@@ -40,13 +40,19 @@ This project focuses on two things a storytelling platform needs to measure:
 
 The first chart compares how many contradictions each model produced under each workflow.
 
+![Contradiction Count by Model and Workflow](contradiction_by_model_workflow.png)
+
 ### Consistency vs Repetition Tradeoff
 
 The second chart plots contradiction count against turn overlap for every model and workflow, showing where a workflow improved both metrics at once, and where it traded one for the other.
 
+![Consistency vs Repetition Tradeoff](consistency_vs_repetition.png)
+
 ### Average Contradictions per Workflow
 
 The third chart aggregates contradiction count across all three models per workflow, to show the overall trend before looking at per model differences.
+
+![Average Contradictions per Workflow](avg_contradictions_per_workflow.png)
 
 ## Validation
 
@@ -66,11 +72,13 @@ This mirrors the real problem behind running AI storytelling across dozens of mo
 
 `Canon_Drift.ipynb`, the complete notebook that runs from top to bottom in Google Colab
 
-Comparison table of contradiction count and turn overlap across all 9 model and workflow combinations
+`canon_drift_results.csv`, the full comparison table of contradiction count and turn overlap across all 9 model and workflow combinations
 
-Three charts comparing consistency and repetition across models and workflows
+`contradiction_by_model_workflow.png`, contradiction count grouped by model and workflow
 
-Written summary of findings
+`consistency_vs_repetition.png`, scatter plot of the consistency and repetition tradeoff
+
+`avg_contradictions_per_workflow.png`, aggregate contradiction count per workflow
 
 ## Why this is useful
 
